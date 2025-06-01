@@ -21,6 +21,6 @@ def customize():
 on=PhotoImage(file="light.png")
 off=PhotoImage(file="dark.png")
 
-button=Button(root,image=on,bd=0,bg="white",activebackground="white")
+button=Button(root,image=on,bd=0,bg="white",activebackground="white",command=customize)
 button.pack(padx=50,pady=50)
 root.mainloop()
