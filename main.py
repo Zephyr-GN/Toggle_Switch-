@@ -7,6 +7,7 @@ root.config(bg="white")
 
 button_mode=True
 
+# Background de la app al seleccionar boton
 def customize():
     global button_mode
     if button_mode:
@@ -21,6 +22,7 @@ def customize():
 on=PhotoImage(file="light.png")
 off=PhotoImage(file="dark.png")
 
+# Configuracion del boton
 button=Button(root,image=on,bd=0,bg="white",activebackground="white",command=customize)
 button.pack(padx=50,pady=50)
 root.mainloop()
